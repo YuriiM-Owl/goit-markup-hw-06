@@ -7,6 +7,10 @@
   .burger-socials-list {
     gap: 56px;
   }
+
+  .burger-address-link.accent {
+    font-size: 36px;
+  }
 }
 
 /*! ------------------------ TABLET ------------------------ */

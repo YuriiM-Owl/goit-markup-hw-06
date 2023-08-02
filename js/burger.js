@@ -1,3 +1,5 @@
+// TODO don't forget remove commented code
+
 // (() => {
 //   const refs = {
 //     openModalBtn: document.querySelector('[data-modal-open]'),

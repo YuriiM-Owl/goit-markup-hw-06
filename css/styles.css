@@ -384,9 +384,12 @@ address {
   color: inherit;
 }
 
-.burger-address-link.main-title {
-  font-weight: 700;
+.burger-address-link.accent {
   color: var(--c-primary);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
 }
 
 .burger-address-list-item:not(:last-child) {
