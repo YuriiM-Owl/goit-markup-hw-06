@@ -531,7 +531,7 @@ address {
   row-gap: 16px;
   flex-wrap: wrap;
   justify-content: flex-start;
-  max-width: 380px;
+  max-width: 360px;
   margin-bottom: 48px;
 }
 
