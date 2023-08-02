@@ -435,4 +435,12 @@
   .footer-socials-box {
     margin-right: 80px;
   }
+
+  .subscibe-input {
+    border: 1px solid var(--c-text-alt);
+  }
+
+  .subscibe-input::placeholder {
+    color: currentColor;
+  }
 }
