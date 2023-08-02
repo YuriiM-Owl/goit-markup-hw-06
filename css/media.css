@@ -1,0 +1,253 @@
+/*! ------------------------ MOBILE ------------------------ */
+
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 426px;
+  }
+  .burger-socials-list {
+    gap: 56px;
+  }
+}
+
+/*! ------------------------ TABLET ------------------------ */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 766px;
+  }
+
+  .main-title {
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  /** ------------------------ Header ------------------------ */
+
+  .burger-menu-icon {
+    display: none;
+  }
+
+  .burger-menu-wrapper {
+    display: none;
+  }
+
+  /** ------------------------ Hero ------------------------ */
+
+  .hero .container {
+    gap: 36px;
+  }
+
+  .hero .main-title {
+    max-width: 496px;
+  }
+
+  /** ---------------------- About Us ---------------------- */
+
+  .about-list {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .about-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .about-list-item .section-title {
+    text-align: start;
+    margin-bottom: 8px;
+  }
+
+  /** ------------------------ Our Team ------------------------ */
+
+  .team.section > .container {
+    max-width: 582px;
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+
+  .team-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  /** ------------------------ Customers ------------------------ */
+
+  .customers.section > .container {
+    max-width: 582px;
+  }
+
+  .customers-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .customers-item {
+    flex-basis: calc((100% - 24px * 2) / 3);
+  }
+
+  /*! ------------------------ Footer ------------------------ */
+
+  .page-footer.section > .container {
+    max-width: 582px;
+  }
+
+  .page-footer .container {
+    justify-content: flex-start;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .page-footer .logo,
+  .footer-box-title {
+    text-align: start;
+  }
+
+  .subscribe-form {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .subscribe-label {
+    flex-basis: auto;
+  }
+
+  .subscibe-input {
+    width: 264px;
+    margin-bottom: 0;
+  }
+}
+
+/*! ------------------------ DESKTOP ------------------------ */
+
+@media screen and (min-width: 1158px) {
+  .container,
+  .team.section > .container,
+  .customers.section > .container,
+  .page-footer.section > .container {
+    max-width: 1158px;
+  }
+
+  /** ------------------------ Hero ------------------------ */
+
+  .hero.section {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 188px 0;
+    background-color: var(--c-decoration-dark);
+    background-image: linear-gradient(var(--c-hero-bg), var(--c-hero-bg)),
+      url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .hero .container {
+    gap: 48px;
+  }
+
+  /** ---------------------- About Us ---------------------- */
+
+  .about.section {
+    padding: 120px 0;
+  }
+
+  .about-list {
+    gap: 24px;
+  }
+
+  .about-list-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+
+  .about-icon-box {
+    background-color: var(--c-decoration-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .about-list-item .section-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+
+  .about-list-item .text {
+    font-weight: 400;
+  }
+
+  /** --------------- What we are doing / Product --------------- */
+  .product.section {
+    display: block;
+    padding-bottom: 120px;
+  }
+
+  .product.section .section-title {
+    margin-bottom: 72px;
+    text-align: center;
+  }
+
+  .product-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .product-list-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+  }
+
+  /** ------------------------ Our Team ------------------------ */
+
+  .team.section {
+    padding: 120px 0;
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .team-list-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+
+  /** ------------------------ Customers ------------------------ */
+
+  .customers-item {
+    flex-basis: calc((100% - 24px * 5) / 6);
+  }
+
+  /*! ------------------------ Footer ------------------------ */
+  .page-footer.section {
+    padding: 100px 0;
+  }
+
+  .page-footer .container {
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .footer-logo-box {
+    margin-right: 120px;
+  }
+
+  .footer-logo-box .text {
+    color: var(--c-decoration-light);
+  }
+
+  .footer-socials-box {
+    margin-right: 80px;
+  }
+}

@@ -21,16 +21,17 @@
     />
     <!-- Styles -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
-    <!----------------------- Header ----------------------->
+    <!--!--------------------- Header ----------------------->
 
     <header class="page-header">
       <div class="container">
+        <a class="logo link" href="./index.html"
+          >Web<span class="logo-accent">Studio</span></a
+        >
         <nav class="page-nav">
-          <a class="logo link" href="./index.html"
-            >Web<span class="logo-accent">Studio</span></a
-          >
           <ul class="nav-list list">
             <li class="nav-list-item">
               <a class="nav-link link active-now" href="./index.html">Studio</a>
@@ -57,13 +58,117 @@
             </li>
           </ul>
         </address>
+        <button class="burger-menu-icon" data-menu-open>
+          <span class="burger-menu-line"></span>
+        </button>
+      </div>
+
+      <!--------------- BURGER --------------->
+
+      <div class="burger-menu-body" data-menu>
+        <button class="close-btn" type="button" data-menu-close>
+          <svg class="close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#close-btn-icon"></use>
+          </svg>
+        </button>
+        <nav class="burger-nav">
+          <ul class="burger-nav-list list">
+            <li class="burger-nav-list-item">
+              <a
+                class="burger-nav-link link main-title active-now"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="burger-nav-list-item">
+              <a class="burger-nav-link link main-title" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="burger-nav-list-item">
+              <a class="burger-nav-link link main-title" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="burger-address">
+          <ul class="burger-address-list list">
+            <li class="burger-address-list-item">
+              <a
+                class="burger-address-link main-title link"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="burger-address-list-item">
+              <a
+                class="burger-address-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="burger-socials-list list">
+            <li class="burger-socials-item">
+              <a
+                href="https://www.instagram.com/"
+                class="burger-socials-link link"
+                aria-label="instagram"
+                target="_blank"
+                rel="no-referrer noopener"
+              >
+                <svg class="burger-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#socials-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-socials-item">
+              <a
+                href="https://www.twitter.com/"
+                class="burger-socials-link link"
+                aria-label="twitter"
+                target="_blank"
+                rel="no-referrer noopener"
+              >
+                <svg class="burger-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#socials-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-socials-item">
+              <a
+                href="https://www.facebook.com/"
+                class="burger-socials-link link"
+                aria-label="facebook"
+                target="_blank"
+                rel="no-referrer noopener"
+              >
+                <svg class="burger-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#socials-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-socials-item">
+              <a
+                href="https://www.linkedin.com/"
+                class="burger-socials-link link"
+                aria-label="linkedin"
+                target="_blank"
+                rel="no-referrer noopener"
+              >
+                <svg class="burger-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#socials-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
       </div>
     </header>
 
-    <!-------------------- Page Content -------------------->
+    <!--!------------------ Page Content -------------------->
 
     <main>
-      <!-------------------- Hero -------------------->
+      <!--!------------------ Hero -------------------->
 
       <section class="hero section">
         <div class="container">
@@ -78,55 +183,55 @@
         </div>
       </section>
 
-      <!-------------------- About Us -------------------->
+      <!--!------------------ About Us -------------------->
 
       <section class="about section">
         <div class="container">
-          <h2 class="visually-hidden section-title">About us</h2>
+          <h2 class="visually-hidden">About us</h2>
           <ul class="about-list list">
             <li class="about-list-item">
-              <div class="thumb">
-                <svg class="about-ico" width="64" height="64">
+              <div class="about-icon-box">
+                <svg class="about-icon" width="64" height="64">
                   <use href="./images/icons.svg#about-us-1"></use>
                 </svg>
               </div>
-              <h3 class="local-title">Strategy</h3>
+              <h3 class="section-title">Strategy</h3>
               <p class="text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
             <li class="about-list-item">
-              <div class="thumb">
-                <svg class="about-ico" width="64" height="64">
+              <div class="about-icon-box">
+                <svg class="about-icon" width="64" height="64">
                   <use href="./images/icons.svg#about-us-2"></use>
                 </svg>
               </div>
-              <h3 class="local-title">Punctuality</h3>
+              <h3 class="section-title">Punctuality</h3>
               <p class="text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
             <li class="about-list-item">
-              <div class="thumb">
-                <svg class="about-ico" width="64" height="64">
+              <div class="about-icon-box">
+                <svg class="about-icon" width="64" height="64">
                   <use href="./images/icons.svg#about-us-3"></use>
                 </svg>
               </div>
-              <h3 class="local-title">Diligence</h3>
+              <h3 class="section-title">Diligence</h3>
               <p class="text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
             <li class="about-list-item">
-              <div class="thumb">
-                <svg class="about-ico" width="64" height="64">
+              <div class="about-icon-box">
+                <svg class="about-icon" width="64" height="64">
                   <use href="./images/icons.svg#about-us-4"></use>
                 </svg>
               </div>
-              <h3 class="local-title">Technologies</h3>
+              <h3 class="section-title">Technologies</h3>
               <p class="text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -136,7 +241,7 @@
         </div>
       </section>
 
-      <!----------------- What are we doing ----------------->
+      <!--!--------------- What are we doing ----------------->
 
       <section class="product section">
         <div class="container">
@@ -170,7 +275,7 @@
         </div>
       </section>
 
-      <!-------------------- Our Team -------------------->
+      <!--!------------------ Our Team -------------------->
 
       <section class="team section">
         <div class="container">
@@ -452,7 +557,7 @@
         </div>
       </section>
 
-      <!-------------------- Customers -------------------->
+      <!--!------------------ Customers -------------------->
 
       <section class="customers section">
         <div class="container">
@@ -535,7 +640,7 @@
       </section>
     </main>
 
-    <!-------------------- Footer -------------------->
+    <!--!------------------ Footer -------------------->
 
     <footer class="page-footer section">
       <div class="container">
@@ -548,7 +653,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <!-- Footer Socials -->
+
         <div class="footer-socials-box">
           <p class="text footer-box-title">Social media</p>
           <ul class="footer-socials-list list">
@@ -606,7 +711,7 @@
             </li>
           </ul>
         </div>
-        <!-- Subscribe form -->
+
         <div class="footer-subscribe-box">
           <p class="text footer-box-title">Subscribe</p>
           <form class="subscribe-form">
@@ -634,12 +739,12 @@
       </div>
     </footer>
 
-    <!-------------------- Modal -------------------->
+    <!--!------------------ Modal -------------------->
 
     <div class="modal-container is-hidden" data-modal>
       <div class="modal-body">
-        <button class="modal-close-btn" type="button" data-modal-close>
-          <svg class="modal-close-btn-icon" width="8" height="8">
+        <button class="close-btn" type="button" data-modal-close>
+          <svg class="close-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#close-btn-icon"></use>
           </svg>
         </button>
@@ -718,9 +823,6 @@
                   <use href="./images/icons.svg#check-mark-icon "></use>
                 </svg>
               </span>
-              <!-- I accept the terms and conditions of the
-              <a href="" class="user-conditions-link">Privacy Policy</a> -->
-              <!-- TODO return after autocheck complete  -->
               <span class="user-conditions-text">
                 I accept the terms and conditions of the
                 <a href="" class="user-conditions-link">Privacy Policy</a>
@@ -734,6 +836,7 @@
     </div>
 
     <!-- !------------------ JS Files -------------------->
+    <script src="./js/burger.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
