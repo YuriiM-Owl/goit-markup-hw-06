@@ -114,23 +114,6 @@
 
   /** ------------------------ Hero ------------------------ */
 
-  .hero.section {
-    max-width: 768px;
-    background-color: var(--c-decoration-dark);
-    background-image: linear-gradient(var(--c-hero-bg), var(--c-hero-bg)),
-      url(../images/hero-bg-tab-1x.jpg);
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero.section {
-      background-color: var(--c-decoration-dark);
-      background-image: linear-gradient(var(--c-hero-bg), var(--c-hero-bg)),
-        url(../images/hero-bg-tab-2x.jpg);
-    }
-  }
-
   .hero .container {
     gap: 36px;
   }
@@ -241,7 +224,7 @@
     flex-basis: auto;
   }
 
-  .subscibe-input {
+  .subscribe-input {
     width: 264px;
     margin-bottom: 0;
   }
@@ -297,19 +280,7 @@
 
   .hero.section {
     max-width: 1440px;
-    background-color: var(--c-decoration-dark);
-    background-image: linear-gradient(var(--c-hero-bg), var(--c-hero-bg)),
-      url(../images/hero-bg-desk-1x.jpg);
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero.section {
-      background-color: var(--c-decoration-dark);
-      background-image: linear-gradient(var(--c-hero-bg), var(--c-hero-bg)),
-        url(../images/hero-bg-desk-2x.jpg);
-    }
+    padding: 188px 0;
   }
 
   .hero .container {
@@ -436,11 +407,11 @@
     margin-right: 80px;
   }
 
-  .subscibe-input {
+  .subscribe-input {
     border: 1px solid var(--c-text-alt);
   }
 
-  .subscibe-input::placeholder {
+  .subscribe-input::placeholder {
     color: currentColor;
   }
 }
